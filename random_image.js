@@ -7,3 +7,7 @@ function getRandomImage() {
 	let randomIndex = Math.floor(Math.random() * imgUrls.length)
 	return imgUrls[randomIndex]
 }
+
+function setRandomImage(imgId) {
+	document.getElementById(imgId).src = getRandomImage();
+}
